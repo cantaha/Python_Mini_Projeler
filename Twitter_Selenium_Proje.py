@@ -146,7 +146,7 @@ username = "********"
 password = "**************"
 twit = TwitterProje(username, password)
 twit.login()
-# twit.getFollowers()
-# twit.searchTweet("Learn Python", 1)
-# twit.followUser("**************")
+twit.getFollowers()
+twit.searchTweet("Learn Python", 1)
+twit.followUser("**************")
 twit.unfollowUser("**************")
