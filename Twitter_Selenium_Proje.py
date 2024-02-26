@@ -13,7 +13,7 @@ class TwitterProje:
 
     def login(self):
         self.driver.get("https://twitter.com/")
-        time.sleep(5)
+        time.sleep(6)
         self.driver.find_element(By.XPATH, "//*[@id='react-root']/div/div/div[2]/main/div/div/div[1]/div/div/div[3]/div[5]/a").click()
         time.sleep(3)
         loginInput = self.driver.find_element(By.XPATH, "//*[@id='layers']/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input").send_keys(self.username, Keys.ENTER)
@@ -113,8 +113,11 @@ class TwitterProje:
 
         with open("tweets.txt", "w", encoding="UTF-8") as file:
             for tweet in self.hashtag:
-                file.write(str(tweet) + "\n")
-                file.write("*" * 10 + "\n")
+                if tweet in self.hashtag:
+                    pass
+                else:
+                    file.write(str(tweet) + "\n")
+                    file.write("*" * 10 + "\n")
 
         print(len(list))
 
@@ -142,11 +145,11 @@ class TwitterProje:
 
 # kullanıcı adı ve şifre girilmesi gerekli
 
-username = "********"
-password = "**************"
+username = "***********"
+password = "************"
 twit = TwitterProje(username, password)
 twit.login()
 twit.getFollowers()
-twit.searchTweet("Learn Python", 1)
-twit.followUser("**************")
-twit.unfollowUser("**************")
+twit.searchTweet("*********", 2)
+twit.followUser("********")
+twit.unfollowUser("*********")

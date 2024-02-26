@@ -4,7 +4,6 @@ bamboo-digital-paper-4708017_1920.jpg
 link.html
 selectors.html
 seleniumTest.py
-../Libraries/Selenium.py
 test_webkit.py
 instausers.txt
 twit_users.txt
