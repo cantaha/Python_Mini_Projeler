@@ -6,8 +6,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 link = "https://www.linkedin.com/"
-username = "tahacan107@gmail.com"
-password = "vefgix-0xovNo-ginkid"
+username = "*********"
+password = "********"
 searchKeyword = "Digital Marketing"
 areaKeyword = "İstanbul, Türkiye"
 expectedSalary = "50000 TL"
