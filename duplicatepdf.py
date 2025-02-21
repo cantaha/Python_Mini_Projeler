@@ -45,3 +45,4 @@ if duplicates:
         print(f"Duplicate: {dup[0]} and {dup[1]}")
 else:
     print("No duplicates found.")
+    
